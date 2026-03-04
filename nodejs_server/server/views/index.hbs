@@ -1,0 +1,24 @@
+{{> header}}
+{{> menu}}
+
+<h1>Pàgina principal</h1>
+
+<div class="page-container">
+
+  <h2>Pel·lícules destacades</h2>
+  {{#each movies}}
+    <div class="card">
+      <h3>{{title}} ({{release_year}})</h3>
+    </div>
+  {{/each}}
+
+  <h2>Categories</h2>
+  {{#each categories}}
+    <div class="card">
+      <h3>{{name}}</h3>
+    </div>
+  {{/each}}
+
+</div>
+
+{{> footer}}

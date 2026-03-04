@@ -1,0 +1,28 @@
+{{> header}}
+{{> menu}}
+
+<h1>Clients</h1>
+
+<div class="page-container">
+  {{#each customers}}
+    <div class="card">
+
+      <h2>{{first_name}} {{last_name}}</h2>
+      <p class="email">{{email}}</p>
+
+      <h3>Últims 5 lloguers</h3>
+
+      <ul>
+        {{#each rentals}}
+          <li>
+            <span>{{rental_date}}</span>
+            <span>Inventari: {{inventory_id}}</span>
+          </li>
+        {{/each}}
+      </ul>
+
+    </div>
+  {{/each}}
+</div>
+
+{{> footer}}

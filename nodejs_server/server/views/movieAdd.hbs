@@ -1,0 +1,27 @@
+{{> header}}
+{{> menu}}
+
+<h1>Afegir pel·lícula</h1>
+
+<form method="POST" action="/afegirPeli">
+  <label>Títol:</label>
+  <input type="text" name="title" required>
+
+  <label>Descripció:</label>
+  <textarea name="description"></textarea>
+
+  <label>Any:</label>
+  <input type="number" name="year">
+
+  <label>Idioma:</label>
+    <select name="language_id" required>
+      {{#each languages}}
+        <option value="{{language_id}}">{{name}}</option>
+      {{/each}}
+    </select>
+
+
+  <button type="submit">Crear</button>
+</form>
+
+{{> footer}}

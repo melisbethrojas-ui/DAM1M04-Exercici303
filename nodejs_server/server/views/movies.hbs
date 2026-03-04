@@ -1,0 +1,31 @@
+{{> header}}
+{{> menu}}
+
+<h1>Pel·lícules</h1>
+<a class="btn add-btn" href="/movieAdd">➕ Afegir pel·lícula</a>
+
+
+<div class="page-container">
+  {{#each movies}}
+    <div class="card">
+
+      <h2>{{title}}</h2>
+      <p class="year">Any: {{release_year}}</p>
+
+      <h3>Actors</h3>
+      <ul>
+        {{#each actors}}
+          <li>
+            <span>{{first_name}} {{last_name}}</span>
+          </li>
+        {{/each}}
+      </ul>
+
+      <!-- 🔥 Enllaç a la fitxa de la pel·lícula (GET /movie?id=XX) -->
+      <a class="btn" href="/movie?id={{film_id}}">Veure detalls</a>
+
+    </div>
+  {{/each}}
+</div>
+
+{{> footer}}

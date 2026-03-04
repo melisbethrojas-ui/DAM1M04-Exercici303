@@ -1,0 +1,127 @@
+/* Tipografía y base */
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* NAVBAR  */
+nav {
+  background: #0f172a;           
+  color: #e5e7eb;                 
+  padding: 14px 40px;               
+  display: flex;
+  align-items: center;
+  gap: 28px;                       
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: "Inter", sans-serif;
+}
+
+/* Enlaces */
+nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    letter-spacing 0.25s ease;
+}
+
+/* Hover profesional */
+nav a:hover {
+  background: #1e293b;  
+  color: #60a5fa;       
+  letter-spacing: 0.5px;
+}
+
+/* Enlace activo */
+nav a.active {
+  background: #1e293b;
+  color: #60a5fa;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  margin-top: 0;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Listas */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* Footer */
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+/* Contenedor general para todas las páginas */
+.page-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Tarjetas reutilizables */
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Títulos dentro de tarjetas */
+.card h2 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  color: #0f172a;
+}
+
+.card h3 {
+  margin: 12px 0 8px;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+/* Listas internas */
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card li {
+  background: #f1f5f9;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
