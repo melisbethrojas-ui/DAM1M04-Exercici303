@@ -4,13 +4,15 @@
 <h1>Pel·lícules</h1>
 <a class="btn add-btn" href="/movieAdd">Afegir pel·lícula</a>
 
-
 <div class="page-container">
   {{#each movies}}
     <div class="card">
 
       <h2>{{title}}</h2>
-      <p class="year">Any: {{release_year}}</p>
+
+      <p class="year"><strong>Any:</strong> {{release_year}}</p>
+      <p><strong>Duració:</strong> {{length}} min</p>
+      <p><strong>Descripció:</strong> {{description}}</p>
 
       <h3>Actors</h3>
       <ul>
@@ -21,7 +23,6 @@
         {{/each}}
       </ul>
 
-      <!--Enllaç a la fitxa de la pel·lícula (GET /movie?id=XX) -->
       <a class="btn" href="/movie?id={{film_id}}">Veure detalls</a>
 
     </div>
@@ -29,3 +30,4 @@
 </div>
 
 {{> footer}}
+
